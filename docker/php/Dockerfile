@@ -42,6 +42,6 @@ RUN apt install symfony-cli
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 COPY ./docker/xdebug/xdebug.ini $PHP_INI_DIR/conf.d/docker-php-ext-xdebug.ini
 COPY ./docker/opcache/opcache.ini $PHP_INI_DIR/conf.d/ddocker-php-ext-opcache.ini
-RUN git config --global user.email "fpadilla71@hotmail.com" \ 
+RUN git config --global user.email "fpadilla71@gmail.com" \ 
     && git config --global user.name "fpadilla"
 WORKDIR /var/www/symfony
